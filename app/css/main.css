@@ -13,7 +13,7 @@ ul {
 }
 
 li {
-  float: left;
+  display: inline-block;
 }
 
 a {
@@ -74,3 +74,37 @@ header > div:first-child > div > a:hover {
   color: #ef5ba1;
 }
 
+header > div:last-child:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header > div:last-child {
+  width: 985px;
+  margin: 40px auto 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 25px
+}
+
+header > div:last-child > a {
+  float: left;
+}
+
+header > div:last-child > nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header > div:last-child > nav li {
+  margin-left: 18px;
+}
+
+header > div:last-child > nav a {
+  color: #000;
+  font-size: 18px;
+}
+
+header > div:last-child > nav a.active {
+  font-weight: bold;
+}
