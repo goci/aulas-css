@@ -65,7 +65,6 @@ header > div:first-child > div > a {
   padding: 13px;
   border-right: 1px solid #F489BC;
   border-left: 1px solid #F489BC;
-  background-color: #ef5ba1;
   transition: background-color .4s, color .4s;
 }
 
@@ -103,8 +102,17 @@ header > div:last-child > nav li {
 header > div:last-child > nav a {
   color: #000;
   font-size: 18px;
+  position: relative;
+  top: 0;
+  transition-property: top;
+  transition-duration: .3s;
 }
 
-header > div:last-child > nav a.active {
-  font-weight: bold;
+header > div:last-child > nav a:hover {
+  top: -3px;
+}
+
+header > div:last-child > nav a:active {
+  top: 1px;
+  transition: top 60ms;
 }
